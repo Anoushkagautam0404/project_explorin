@@ -1,0 +1,115 @@
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #0c0830, #1a1d3b); /* Dark background */
+  font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+}
+
+/* Form Styling */
+form {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Enhanced shadow */
+  background: rgba(255, 255, 255, 0.1); /* Transparent glass-like effect */
+  backdrop-filter: blur(10px); /* Blur for depth */
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+/* Heading Styling */
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Larger font size */
+  font-weight: 700; /* Bold font */
+  text-transform: uppercase; /* Tech uppercase */
+  letter-spacing: 2px; /* Space for futuristic style */
+  background: linear-gradient(45deg, #f4d03f, #f39c12); /* Yellow range gradient */
+  -webkit-background-clip: text; /* Gradient text */
+  -webkit-text-fill-color: transparent; /* Hide original text color */
+}
+
+/* Input Fields Styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  font-size: 1.1em;
+  background: transparent; /* Transparent input fields */
+  color: #ffffff; /* White text for contrast */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+/* Input Fields Focus Styling */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #f39c12; /* Yellow focus */
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5); /* Subtle glow effect */
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #f4d03f, #f39c12); /* Futuristic yellow gradient */
+  color: #ffffff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Button Hover Styling */
+button:hover {
+  transform: translateY(-5px); /* Lift button on hover */
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.8); /* Subtle yellow glow on hover */
+}
+
+/* Button Active Styling */
+button:active {
+  transform: scale(0.98); /* Shrink button on click */
+  box-shadow: 0 0 5px rgba(243, 156, 18, 0.5); /* Reduced glow */
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #e74c3c; /* Red for errors */
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 500;
+  animation: fadeInError 1s ease-out;
+}
+
+/* Animation for Error Message */
+@keyframes fadeInError {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Lighter color for placeholder */
+}

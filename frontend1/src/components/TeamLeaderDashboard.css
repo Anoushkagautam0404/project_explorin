@@ -1,0 +1,152 @@
+/* src/components/TeamLeaderDashboard.css */
+
+/* Overall Page Styling */
+.team-leader-dashboard-page {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(248, 249, 250, 0.9); /* Slightly translucent background */
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 0 10px; /* Reduced horizontal padding */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  /* Container for all content */
+  .dashboard-container {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px; /* Reduced space between sections */
+    justify-content: center; /* Center content horizontally */
+    width: 100%; /* Full width of the page */
+    flex: 1; /* Allow container to grow and shrink */
+    padding: 10px; /* Reduced padding */
+    margin-top: 60px; /* Margin to account for the navbar height */
+    margin-bottom: 60px; /* Margin to account for the footer height */
+    box-sizing: border-box; /* Include padding and border in width and height */
+  }
+  
+  /* Individual Section Styling */
+  .dashboard-section {
+    background-color: rgba(255, 255, 255, 0.7); /* More translucent white */
+    padding: 10px; /* Further reduced padding */
+    border-radius: 6px; /* Smaller border radius */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    flex: 1; /* Allow sections to grow and shrink */
+    min-width: 240px; /* Smaller minimum width for sections */
+    max-width: 40%; /* Ensure sections fit within the page */
+    box-sizing: border-box; /* Include padding and border in width and height */
+  }
+  
+  /* Heading Styling */
+  h2 {
+    color: #333; /* Dark text color */
+    text-align: center;
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 1.5em; /* Smaller font size */
+    font-weight: bold;
+  }
+  
+  /* Section Heading Styling */
+  h3 {
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 1.2em; /* Smaller font size */
+    border-bottom: 2px solid rgba(246, 199, 67, 0.8); /* Translucent tech yellow border */
+    padding-bottom: 6px; /* Reduced padding */
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 3px; /* Reduced margin */
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Smaller border radius */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly translucent white */
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: rgba(246, 199, 67, 0.8); /* Translucent tech yellow background */
+    color: #fff;
+    border: none;
+    padding: 8px 16px; /* Reduced padding */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em; /* Smaller font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    background-color: rgba(228, 179, 57, 0.8); /* Slightly darker yellow */
+    transform: translateY(-1px); /* Lift button on hover */
+  }
+  
+  /* Button Click Effect */
+  button:active {
+    background-color: rgba(209, 168, 43, 0.8); /* Even darker yellow on click */
+    transform: scale(0.98); /* Shrink button on click */
+  }
+  
+ /* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px; /* Reduced padding */
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* More translucent border */
+  color: #000; /* Black text color */
+  font-size: 0.8em; /* Smaller font size */
+  word-wrap: break-word; /* Ensure long words wrap within the cell */
+  overflow-wrap: break-word; /* Ensures compatibility with all browsers */
+}
+
+th {
+  background-color: rgba(246, 199, 67, 0.6); /* More translucent tech yellow background */
+  color: #000; /* Black text color */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+tr:nth-child(even) {
+  background-color: rgba(249, 249, 249, 0.6); /* More translucent light grey for alternate rows */
+}
+
+tr:hover {
+  background-color: rgba(241, 241, 241, 0.6); /* Slightly translucent grey for hover effect */
+}
+
+
+  
+  /* Message Styling */
+  .error-message {
+    color: #dc3545; /* Red color for errors */
+    background-color: rgba(220, 53, 69, 0.4); /* More translucent light red background */
+    padding: 8px; /* Reduced padding */
+    border-radius: 4px;
+    margin-bottom: 15px; /* Reduced margin */
+    border: 1px solid rgba(220, 53, 69, 0.6); /* More translucent border */
+  }
+  
+  .success-message {
+    color: #28a745; /* Green color for success */
+    background-color: rgba(40, 167, 69, 0.4); /* More translucent light green background */
+    padding: 8px; /* Reduced padding */
+    border-radius: 4px;
+    margin-bottom: 15px; /* Reduced margin */
+    border: 1px solid rgba(40, 167, 69, 0.6); /* More translucent border */
+  }
+  

@@ -1,0 +1,134 @@
+/* Overall Page Styling */
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height */
+    background: linear-gradient(135deg, rgba(255, 223, 88, 0.1), rgba(64, 59, 83, 0.1)); /* Subtle yellow gradient */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    color: #ffdd57; /* Tech-inspired yellow */
+  }
+  
+  /* Main Content Styling */
+  .signup-content {
+    flex: 1; /* Grow to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Signup Container Styling */
+  .signup-container {
+  max-width: 420px;
+  width: 100%;
+  padding: 20px; /* Reduced padding for a smaller height */
+  border-radius: 15px; /* Rounded corners */
+  background: rgba(141, 119, 21, 0.1); /* Translucent yellow background */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  text-align: center;
+  border: 1px solid rgba(255, 223, 88, 0.3); /* Subtle yellow border */
+  min-height: 300px; /* Set a minimum height to ensure consistent sizing */
+  }
+  
+  /* Heading Styling */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-transform: uppercase; /* Tech style: uppercase heading */
+    letter-spacing: 1px;
+    color: #ffdd57; /* Tech-inspired yellow */
+  }
+  
+  /* Input Fields Styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 223, 88, 0.3); /* Yellow border */
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: rgba(255, 223, 88, 0.1); /* Translucent input background */
+    color: #e7c023; /* Yellow input text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+  }
+  
+  /* Input Focus Styling */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #ffd700; /* Brighter yellow on focus */
+    box-shadow: 0 0 10px rgba(255, 223, 88, 0.5); /* Yellow glow */
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffdd57; /* Bright yellow button */
+    color: #000; /* Black text */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    background-color: #ffd700; /* Darker yellow on hover */
+    transform: translateY(-3px); /* Lift button on hover */
+  }
+  
+  /* Button Click Effect */
+  button:active {
+    background-color: #ffc700; /* Even darker yellow on click */
+    transform: scale(0.98); /* Shrink button on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: rgba(255, 223, 88, 0.1); /* Translucent yellow footer */
+    color: #ffdd57; /* Tech yellow text */
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-top: auto; /* Push the footer to the bottom */
+    border-top: 1px solid rgba(255, 223, 88, 0.3); /* Subtle yellow border */
+  }
+  
+  /* Footer Heading Styling */
+  .footer h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffdd57; /* Yellow footer heading */
+    text-transform: uppercase; /* Tech style */
+  }
+  
+  /* Footer Paragraph Styling */
+  .footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #ffd700; /* Brighter yellow for footer text */
+  }
+  
+  /* Footer Link Styling */
+  .footer a {
+    color: #ffd700; /* Bright yellow links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Footer Link Hover Effect */
+  .footer a:hover {
+    color: #ffdd57; /* Slightly lighter yellow on hover */
+  }
+  
+  

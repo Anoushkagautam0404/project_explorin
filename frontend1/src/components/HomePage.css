@@ -1,0 +1,133 @@
+/* Overall Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(255, 223, 88, 0.3)); /* Darker background with a golden glow */
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Main Heading Styling */
+.main-heading {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 20px 0;
+  color: rgba(255, 223, 88, 0.9); /* Bright gold */
+  text-shadow: 2px 2px 8px rgba(255, 223, 88, 0.5); /* Glowing shadow */
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Slightly increased letter spacing */
+}
+
+/* Container for the content */
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Space between side-by-side sections */
+  background: rgba(255, 223, 88, 0.1); /* Subtle golden overlay */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  padding: 20px;
+  animation: fadeIn 1.2s ease-in-out; /* Smooth fade-in animation */
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+}
+
+/* Individual Section Styling */
+.section {
+  flex: 1;
+  max-width: 48%; /* Ensure sections do not exceed container width */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Darker background for each section */
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+}
+
+
+
+
+/* Bold Text Styling */
+.bold-text {
+  font-weight: bold;
+  color: #ffd700; /* Bright yellow for emphasis */
+  margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 223, 88, 0.8); /* Dimmed gold for normal text */
+  text-shadow: 1px 1px 6px rgba(255, 223, 88, 0.3); /* Subtle shadow */
+}
+
+/* Button Styling */
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #000;
+  background-color: rgba(255, 223, 88, 0.9);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px); /* Lifts the button on hover */
+  box-shadow: 0 8px 20px rgba(255, 223, 88, 0.6); /* Glow effect */
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(255, 223, 88, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center;
+    gap: 10px; /* Reduce space between stacked sections */
+  }
+
+  .section {
+    max-width: 100%;
+  }
+
+  .main-heading {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 12px 24px;
+  }
+}
+
+/* Fade-In Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
